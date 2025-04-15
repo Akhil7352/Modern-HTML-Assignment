@@ -1,0 +1,192 @@
+<!-- Que 1. List out the features of HTML5 -->
+
+<!-- Ans -->
+
+<!-- Features of HTML5
+
+Here are the key features of HTML5:
+
+1. Semantic Elements:- New tags like <header>, <footer>, <article>, <section>, <nav>, <aside>
+
+2. Audio and Video Support:- Native <audio> and <video> elements
+
+3. Canvas Element:- <canvas> for drawing graphics
+
+4. SVG Support:- Scalable Vector Graphics integration(SVG)
+
+5. Responsive Images:- srcset and <picture> element -->
+
+
+
+<!-- Que 2. What are HTML Entities? List out 5 commonly used HTML entities -->
+<!-- Ans -->
+
+<!--  HTML Entities:-
+
+HTML entities are codes used to represent characters that have special meaning in HTML or that can't be easily typed on a keyboard.
+
+5 commonly used HTML entities:-
+
+1. &lt; - < (less than)
+
+2. &gt; - > (greater than)
+
+3. &amp; - & (ampersand)
+
+4. &quot; - " (double quote)
+
+5. &nbsp; - non-breaking space -->
+
+
+
+<!-- Que 3. Define accessibility in the context of web development. Discuss why it is essential to create accessible websites and how it benefits different user group. -->
+<!-- Ans -->
+
+<!-- Accessibility in Web Development-
+
+Definition:- Accessibility in web development (often abbreviated as a11y) refers to the practice of making websites usable by as many people as possible, including those with disabilities such as visual, auditory, motor, or cognitive impairments.
+
+Why it is essential:-
+
+1. Legal requirements.
+2. Better UX:- Often improves usability for all users, not just those with disabilities
+3. SEO benefits:- Accessible sites tend to rank better in search engines
+4. Broader audience:- Reaches more potential customers/users
+
+Benefits for different user groups:-
+1. Visually impaired: Screen readers can interpret properly structured content
+2. Hearing impaired: Captions and transcripts for audio/video content
+3. Cognitive disabilities: Clear layouts and consistent navigation help understanding
+4. Elderly users: Larger text and good contrast aid readability -->
+
+
+<!-- Que 4. List any 3 ways which help us in improving the accessibility of HTML. -->
+<!-- Ans -->
+
+<!-- Ways to Improve HTML Accessibility:- 
+1. Use semantic HTML: Properly structured headings (<h1> to <h6>) and semantic elements (<nav>, <main>, <article>, etc.)
+2. Provide text alternatives: alt attributes for images, captions for videos
+3. Ensure keyboard navigability: All interactive elements should be focusable and usable with keyboard alone -->
+
+
+<!-- Que 5. Create a web page that highlights the features of HTML5. Use appropriate semantic tags to structure the content and showcase at least three key features of HTML5 with explanations. -->
+<!-- Ans -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features Showcase</title>
+
+</head>
+
+<body>
+    <!-- Use case of HTML5 1st semantic Tag header,Main,Article and Footer -->
+    <header>
+        <h1>Key Features of HTML5</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Semantic Elements</h2>
+            <p>HTML5 introduced semantic elements that clearly describe their meaning to both the browser and developer.
+                <br>
+                Tags like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>,
+                <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> make the HTML more readable
+                and improve accessibility and SEO.
+            </p>
+        </article>
+
+        <article>
+            <h2>Audio and Video Support</h2>
+            <p>Before HTML5, audio and video could only be played in a browser with plugins.
+                HTML5 introduced <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements for
+                embedding media directly in web pages.</p>
+            <!-- HTML5 2nd use case -->
+            <video width="320" height="240" controls muted autoplay>
+                <source src="#">
+            </video>
+
+        </article>
+
+        <article>
+            <!-- HTML5 3rd use case -->
+            <h2>SVG Support</h2>
+            <p>HTML5 has built-in support for Scalable Vector Graphics (SVG), which allows for resolution-independent
+                graphics that can scale to any size without losing quality. SVG graphics are defined in XML format and
+                can be styled with CSS.</p>
+            <svg width="300" height="200">
+                <polygon points="100,10 40,198 190,78 10,78 160,198"
+                    style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+            </svg>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HTML5 Features Demo. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
+
+<!-- Que 6. Create a simple web page which has a table. The table must have 2 columns HTML and HTML5. The table should include a minimum of three rows describing the differences between HTML and HTML5. -->
+
+<!-- Ans -->
+
+<!-- HTML vs HTML5 Comparison Table -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML vs HTML5 Comparison</title>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML vs HTML5 Comparison</h1>
+
+    <table style="width: 800px; height: 400px; margin: auto; border: 2px solid rgb(222, 33, 33);" border="1">
+        <caption>Differences Between HTML and HTML5</caption>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>HTML</th>
+                <th>HTML5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Doctype Declaration</td>
+                <td>Longer and more complex</td>
+                <td>Simplified: <code>&lt;!DOCTYPE html&gt;</code></td>
+            </tr>
+            <tr>
+                <td>Multimedia Support</td>
+                <td>Required third-party plugins like Flash for audio/video</td>
+                <td>Native support with <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements</td>
+            </tr>
+            <tr>
+                <td>Semantic Elements</td>
+                <td>Relied mostly on <code>&lt;div&gt;</code> elements with IDs/classes</td>
+                <td>Introduced semantic elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
+                    <code>&lt;article&gt;</code>, etc.
+                </td>
+            </tr>
+            <tr>
+                <td>Graphics</td>
+                <td>Limited options, often required plugins</td>
+                <td>Introduced <code>&lt;canvas&gt;</code> for dynamic graphics and supports SVG</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
